@@ -4,8 +4,6 @@ import (
 	"changeme/tools"
 	"encoding/json"
 	"fmt"
-	"github.com/oschwald/geoip2-golang"
-	"github.com/tidwall/gjson"
 	"net"
 	"os/exec"
 	"path"
@@ -13,25 +11,39 @@ import (
 	"strconv"
 	"strings"
 	"syscall"
+
+	"github.com/oschwald/geoip2-golang"
+	"github.com/tidwall/gjson"
 )
 
 var ip string
 
 // Greet returns a greeting for the given name
 func (a *App) GreetLogin(loginInfo string) string {
-	result := gjson.GetMany(loginInfo, "username", "password", "ip")
-	url := tools.ActionUrl(result[2].Str, "login")
-	params := map[string]string{}
-	body, _ := json.Marshal(map[string]string{
-		"username": result[0].Str,
-		"password": result[1].Str,
-	})
+	// result := gjson.GetMany(loginInfo, "username", "password", "ip")
+	// url := tools.ActionUrl(result[2].Str, "login")
+	// params := map[string]string{}
+	// body, _ := json.Marshal(map[string]string{
+	// 	"username": result[0].Str,
+	// 	"password": result[1].Str,
+	// })
 
-	res, err := tools.XPost(url, params, string(body))
-	if err != nil {
-		return tools.ResponseData(strconv.Itoa(tools.CodeServerBusy), strings.Replace(err.Error(), "\"", "", -1))
+	// res, err := tools.XPost(url, params, string(body))
+	// if err != nil {
+	// 	return tools.ResponseData(strconv.Itoa(tools.CodeServerBusy), strings.Replace(err.Error(), "\"", "", -1))
+	// }
+	// ip = result[2].Str
+
+	result := map[string]interface{}{
+		"code": 1,
+		"msg":  "",
+		"data": map[string]interface{}{
+			"token": "aaaaa",
+		},
 	}
-	ip = result[2].Str
+
+	res, _ := json.Marshal(&result)
+
 	return string(res)
 }
 

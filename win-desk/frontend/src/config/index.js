@@ -9,7 +9,7 @@
  * cacheNamespace - 本地存储缓存key前缀
  */
 export default {
-    title: '@工具', // 标题
+    title: '@fished', // 标题
     fixedHeader: true, // 固定 Header
     sidebarLogo: true, // 显示logo
     tagsView: true, // 多标签

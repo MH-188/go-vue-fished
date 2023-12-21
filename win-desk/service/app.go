@@ -3,6 +3,7 @@ package service
 import (
 	"context"
 	"fmt"
+
 	"github.com/wailsapp/wails/v2/pkg/runtime"
 )
 
@@ -46,6 +47,28 @@ func (a *App) SelectFile(title string, filetype string) string {
 	})
 	if err != nil {
 		return fmt.Sprintf("err %s!", err)
+	}
+	return selection
+}
+
+// 选择文件：支持多选
+func (a *App) SelectFiles() []string {
+	//runtime.OpenFileDialog(a.ctx,runtime.OpenDialogOptions{})
+	selection, err := runtime.OpenMultipleFilesDialog(a.ctx, runtime.OpenDialogOptions{})
+	if err != nil {
+		fmt.Println(err)
+		return selection
+	}
+	return selection
+}
+
+// 选择路径
+func (a *App) SelectPath() string {
+
+	selection, err := runtime.OpenDirectoryDialog(a.ctx, runtime.OpenDialogOptions{})
+	if err != nil {
+		fmt.Println(err)
+		return selection
 	}
 	return selection
 }

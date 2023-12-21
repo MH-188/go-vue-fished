@@ -22,9 +22,13 @@ defineProps({
   },
 });
 
-import aitePng from '@/assets/images/aite.png'
+// import samJpg from '@/assets/images/sam.jpg'
+// const avatar = samJpg
 
-const avatar = aitePng
+import caoIco from '@/assets/icons/cao.ico'
+const avatar = caoIco
+
+
 
 const emits = defineEmits(['click'])
 

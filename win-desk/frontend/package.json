@@ -29,7 +29,8 @@
     "vue3-json-viewer": "^2.2.2",
     "vuedraggable": "^4.1.0",
     "vuex": "^4.0.2",
-    "vue3-clipboard": "^1.0.0"
+    "vue3-clipboard": "^1.0.0",
+    "vue-draggable-plus": "^0.3.2"
   },
   "devDependencies": {
     "@vitejs/plugin-legacy": "^1.8.2",

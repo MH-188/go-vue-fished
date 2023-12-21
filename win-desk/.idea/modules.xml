@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/mydesk.iml" filepath="$PROJECT_DIR$/.idea/mydesk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/win-desk.iml" filepath="$PROJECT_DIR$/.idea/win-desk.iml" />
     </modules>
   </component>
 </project>
