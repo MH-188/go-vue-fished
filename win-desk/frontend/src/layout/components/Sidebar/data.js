@@ -19,6 +19,19 @@ const data = [
             },
         ]
     },
+    {
+        path: '/xhs',
+        component: () => import('@/layout/index.vue'),
+        name: 'Xhs',
+        meta: { title: '小红书', icon: 'List' },
+        children: [
+            {
+                path: 'red_book',
+                name: 'redBook',
+                meta: { title: '小红书', icon: 'Tools' }
+            },
+        ]
+    },
 
     // {
     //     path: '/mysql',

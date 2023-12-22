@@ -30,6 +30,21 @@ const routes = [
     },
 
     {
+        path: '/xhs',
+        component: () => import('@/layout/index.vue'),
+        name: 'Xhs',
+        meta: { title: '小红书', icon: 'Aim' },
+        children: [
+            {
+                path: 'red_book',
+                name: 'redBook',
+                component: () => import('@/views/xhs/Xhs.vue'),
+                meta: { title: '小红书', icon: 'Edit' }
+            },
+        ]
+    },
+
+    {
         path: '/mysql',
         component: () => import('@/layout/index.vue'),
         name: 'MySQL',

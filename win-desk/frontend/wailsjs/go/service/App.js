@@ -6,6 +6,10 @@ export function FilesRename(arg1) {
   return window['go']['service']['App']['FilesRename'](arg1);
 }
 
+export function GetXhsBackgroundPicture() {
+  return window['go']['service']['App']['GetXhsBackgroundPicture']();
+}
+
 export function Greet(arg1) {
   return window['go']['service']['App']['Greet'](arg1);
 }

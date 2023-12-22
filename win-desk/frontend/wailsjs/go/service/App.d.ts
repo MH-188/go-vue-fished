@@ -4,6 +4,8 @@ import {service} from '../models';
 
 export function FilesRename(arg1:Array<service.RenameInfo>):Promise<service.Response>;
 
+export function GetXhsBackgroundPicture():Promise<void>;
+
 export function Greet(arg1:string):Promise<string>;
 
 export function GreetExplainNginx(arg1:string):Promise<string>;
