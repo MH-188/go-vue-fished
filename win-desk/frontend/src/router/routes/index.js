@@ -39,7 +39,7 @@ const routes = [
                 path: 'red_book',
                 name: 'redBook',
                 component: () => import('@/views/xhs/Xhs.vue'),
-                meta: { title: '小红书', icon: 'Edit' }
+                meta: { title: '小红书文章图片获取', icon: 'Edit' }
             },
         ]
     },

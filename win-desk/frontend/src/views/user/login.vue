@@ -57,9 +57,9 @@ import { useRouter } from "vue-router";
 import { setToken } from "../../utils/auth";
 import {GreetLogin} from "../../../wailsjs/go/service/App"
 import { ElMessage } from 'element-plus';
-import aitePng from '@/assets/images/aite.png'
+import samJpg from '@/assets/images/sam.jpg'
 
-const avatar = aitePng
+const avatar = samJpg
 
 const form = reactive({
   username: "",

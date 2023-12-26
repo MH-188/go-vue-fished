@@ -6,8 +6,8 @@ export function FilesRename(arg1) {
   return window['go']['service']['App']['FilesRename'](arg1);
 }
 
-export function GetXhsBackgroundPicture() {
-  return window['go']['service']['App']['GetXhsBackgroundPicture']();
+export function GetXhsBackgroundPicture(arg1) {
+  return window['go']['service']['App']['GetXhsBackgroundPicture'](arg1);
 }
 
 export function Greet(arg1) {
@@ -36,6 +36,10 @@ export function GreetSqlExec(arg1) {
 
 export function GreetSqlQuery(arg1) {
   return window['go']['service']['App']['GreetSqlQuery'](arg1);
+}
+
+export function SaveAllPicture(arg1, arg2) {
+  return window['go']['service']['App']['SaveAllPicture'](arg1, arg2);
 }
 
 export function SelectFile(arg1, arg2) {

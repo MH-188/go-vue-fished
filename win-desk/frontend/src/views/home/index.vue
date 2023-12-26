@@ -10,12 +10,15 @@
             <div class="main">
               <h2>欢迎使用 {{config.title}}</h2>
               <p>
-                基于Redis、Mysql、Nginx工具
+                工具集
               </p>
               <p>
                 <el-link href="https://github.com/Alke-meng/wails-project" target="_blank" type="success">
-                  如果对您有帮助，欢迎 <el-icon><StarFilled /></el-icon> Star https://github.com/Alke-meng/wails-project
+                  如果本项目对您有帮助，欢迎 <el-icon><StarFilled /></el-icon> Star https://github.com/MH-188/go-vue-fished
                 </el-link>
+              </p>
+              <p>
+                感谢https://github.com/Alke-meng/wails-project开源模板
               </p>
             </div>
           </div>
@@ -29,9 +32,9 @@
 <script setup>
 
 import config from "@/config";
-import aitePng from '@/assets/images/aite.png'
+import samJpg from '@/assets/images/sam.jpg'
 
-const avatar = aitePng
+const avatar = samJpg
 
 
 </script>

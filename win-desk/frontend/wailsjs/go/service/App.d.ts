@@ -4,7 +4,7 @@ import {service} from '../models';
 
 export function FilesRename(arg1:Array<service.RenameInfo>):Promise<service.Response>;
 
-export function GetXhsBackgroundPicture():Promise<void>;
+export function GetXhsBackgroundPicture(arg1:string):Promise<service.outGetXhsBackgroundPictureParam>;
 
 export function Greet(arg1:string):Promise<string>;
 
@@ -19,6 +19,8 @@ export function GreetLogin(arg1:string):Promise<string>;
 export function GreetSqlExec(arg1:string):Promise<string>;
 
 export function GreetSqlQuery(arg1:string):Promise<string>;
+
+export function SaveAllPicture(arg1:string,arg2:Array<string>):Promise<service.Response>;
 
 export function SelectFile(arg1:string,arg2:string):Promise<string>;
 

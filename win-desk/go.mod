@@ -3,6 +3,7 @@ module changeme
 go 1.18
 
 require (
+	clawer v0.0.0
 	github.com/labstack/gommon v0.4.0
 	github.com/oschwald/geoip2-golang v1.8.0
 	github.com/tidwall/gjson v1.14.4
@@ -40,3 +41,5 @@ require (
 )
 
 // replace github.com/wailsapp/wails/v2 v2.3.1 => D:\project\golang\pkg\mod
+
+replace clawer v0.0.0 => ../clawer

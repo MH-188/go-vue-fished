@@ -28,7 +28,7 @@ const data = [
             {
                 path: 'red_book',
                 name: 'redBook',
-                meta: { title: '小红书', icon: 'Tools' }
+                meta: { title: '小红书文章图片获取', icon: 'Tools' }
             },
         ]
     },
