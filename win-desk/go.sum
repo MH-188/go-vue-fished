@@ -1,3 +1,5 @@
+github.com/MH-188/clawer v0.0.2 h1:oRQQ+J62BlJBp2f3yRlwtiun4svJdT3JXnaNq/l1NNw=
+github.com/MH-188/clawer v0.0.2/go.mod h1:E05AbWcAFIL0Wx0GD1PUaUUej4bOVN47wh1kHZ3c+vk=
 github.com/bep/debounce v1.2.1 h1:v67fRdBA9UQu2NhLFXrSg0Brw7CexQekrBwDMM8bzeY=
 github.com/bep/debounce v1.2.1/go.mod h1:H8yggRPQKLUhUoqrJC1bO2xNya7vanpDl7xR3ISbCJ0=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

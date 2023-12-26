@@ -1,10 +1,10 @@
 package service
 
 import (
-	"clawer/network"
-	"clawer/xhs"
 	"encoding/base64"
 	"fmt"
+	"github.com/MH-188/clawer/network"
+	"github.com/MH-188/clawer/xhs"
 	"github.com/labstack/gommon/log"
 	"io"
 	"net/http"
