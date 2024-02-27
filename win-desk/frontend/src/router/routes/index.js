@@ -43,6 +43,20 @@ const routes = [
             },
         ]
     },
+    {
+        path: '/ins',
+        component: () => import('@/layout/index.vue'),
+        name: 'Ins',
+        meta: { title: 'Instagram', icon: 'Aim' },
+        children: [
+            {
+                path: 'instagram',
+                name: 'instagram',
+                component: () => import('@/views/ins/Ins.vue'),
+                meta: { title: 'instragram文章图片获取', icon: 'Edit' }
+            },
+        ]
+    },
 
     {
         path: '/mysql',

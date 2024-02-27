@@ -4,7 +4,9 @@ import (
 	"changeme/tools"
 	"encoding/json"
 	"fmt"
+	"github.com/labstack/gommon/log"
 	"net"
+	"os"
 	"os/exec"
 	"path"
 	"runtime"
@@ -283,4 +285,24 @@ func nginxParse(s, t string) any {
 		return nil
 	}
 	return data
+}
+
+func (a *App) OpenExplorer(path string) error {
+	cmd := exec.Command("explorer", path)
+	//运行命令
+	err := cmd.Run()
+	if err != nil {
+		log.Error(err)
+		return err
+	}
+	return nil
+}
+
+func (a *App) GetProcedurePath() string {
+	dir, err := os.Getwd()
+	if err != nil {
+		log.Error(err)
+		return ""
+	}
+	return dir
 }

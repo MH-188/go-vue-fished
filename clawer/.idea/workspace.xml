@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="816ead72-f8d8-44f0-8d87-3cbfc023acbb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/clawer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/personal_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/network/http.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/response.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/response_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xhs/background_picture.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xhs/client.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xhs/client_test.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xhs/global.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/xhs/personal_page.go" beforeDir="false" />
-    </list>
+    <list default="true" id="816ead72-f8d8-44f0-8d87-3cbfc023acbb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

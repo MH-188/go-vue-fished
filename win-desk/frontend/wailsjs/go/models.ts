@@ -30,6 +30,24 @@ export namespace service {
 	        this.msg = source["msg"];
 	    }
 	}
+	export class outGetInsBackgroundPictureParam {
+	    code: number;
+	    msg: string;
+	    images: string[];
+	    imagesData: string[];
+	
+	    static createFrom(source: any = {}) {
+	        return new outGetInsBackgroundPictureParam(source);
+	    }
+	
+	    constructor(source: any = {}) {
+	        if ('string' === typeof source) source = JSON.parse(source);
+	        this.code = source["code"];
+	        this.msg = source["msg"];
+	        this.images = source["images"];
+	        this.imagesData = source["imagesData"];
+	    }
+	}
 	export class outGetXhsBackgroundPictureParam {
 	    code: number;
 	    msg: string;
